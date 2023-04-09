@@ -2,7 +2,7 @@
   Titre      : projet final avec OTA 
   Auteur     : Ayyoub Outgouga
   Date       : 10/04/2023
-  Description: Examen (Projet Final) Des deux cours branch master l'arrier plan en blach 
+  Description: Examen (Projet Final) Des deux cours prog 1354 , 1355 1ere branch s'appele master l'arrier plan en blach je prefere de laisser cette branche avec son nom origine
   Version    : 0.0.1
 */
 
