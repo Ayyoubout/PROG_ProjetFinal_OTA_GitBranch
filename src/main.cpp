@@ -1,3 +1,12 @@
+/*
+  Titre      : projet final avec OTA 
+  Auteur     : Ayyoub Outgouga
+  Date       : 10/04/2023
+  Description: Examen (Projet Final) Des deux cours branch master l'arrier plan en blach 
+  Version    : 0.0.1
+*/
+
+
 #include <Adafruit_Sensor.h>
 #include <Adafruit_BME280.h>
 #include <WiFi.h>
