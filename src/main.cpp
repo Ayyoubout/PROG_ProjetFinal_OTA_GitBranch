@@ -101,7 +101,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color:yellow;
+  background-color:#00fffb;
 }
 
 h1 {
