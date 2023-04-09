@@ -7,6 +7,7 @@
 #define SEALEVELPRESSURE_HPA (1013.25)
 
 
+
 // Remplacez par vos identifiants WiFi
 const char* ssid = "Rogers8443";
 const char* password = "connect8443";
@@ -25,7 +26,7 @@ const char* index_html = R"rawliteral(
     <title>ESP8266 WEATHER STATION</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl7/1L_dstPt3HV5HzF6Gvk/e3SHT+5wD1Kq9X5D5z" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-   <link rel="stylesheet" href="css/esp.css">
+    <link rel="stylesheet" href="css/esp.css">
 
  
 </head>
@@ -100,7 +101,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  
+  background-color:yellow;
 }
 
 h1 {
@@ -140,7 +141,7 @@ h2 {
   body{
     text-align: left;
     margin: 20px;
-	
+	background-color:yellow;
     
   }
 
@@ -231,7 +232,7 @@ AsyncWebServer server(80);
 void setup() {
   Serial.begin(9600);
 
-  
+ 
 
   // Initialisez le capteur BME280
   if (!bme.begin(0x76)) {
@@ -264,6 +265,8 @@ server.on("/js/esp.js", HTTP_GET, [](AsyncWebServerRequest *request){
 });
 
 
+
+
   // Créez une route pour envoyer les données du capteur au format JSON
   server.on("/data", HTTP_GET, [](AsyncWebServerRequest *request){
     String json = "{";
@@ -282,14 +285,13 @@ server.on("/js/esp.js", HTTP_GET, [](AsyncWebServerRequest *request){
 }
 
 void loop() {
-  // branch teste   
   // Le serveur web asynchrone gère les requêtes sans blocage
+
   // Save data to data.json periodically
   unsigned long currentMillis = millis();
   if (currentMillis - previousMillis >= interval) {
     previousMillis = currentMillis;
-    
+ 
   }
 }
-
 
