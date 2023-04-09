@@ -141,7 +141,7 @@ h2 {
   body{
     text-align: left;
     margin: 20px;
-	  background-color: red;
+	background-color: #FF0000;
     
   }
 
