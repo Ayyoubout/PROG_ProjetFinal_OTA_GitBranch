@@ -2,8 +2,8 @@
   Titre      : projet final avec OTA 
   Auteur     : Ayyoub Outgouga
   Date       : 10/04/2023
-  Description: Examen (Projet Final) Des deux cours prog 1354 , 1355 1ere branch s'appele firmware1 avec un arrier plan en jaune 
-  Version    : 0.0.2
+  Description: Examen (Projet Final) Des deux cours prog 1354 , 1355 2eme branch s'appele firmware1 avec un arrier plan en jaune 
+  Version    : 0.0.2 
 */
 
 #include <Adafruit_Sensor.h>
