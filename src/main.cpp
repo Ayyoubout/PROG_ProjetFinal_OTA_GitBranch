@@ -284,4 +284,14 @@ server.on("/js/esp.js", HTTP_GET, [](AsyncWebServerRequest *request){
   server.begin();
 }
 
+void loop() {
+  // Le serveur web asynchrone gère les requêtes sans blocage
+
+  // Save data to data.json periodically
+  unsigned long currentMillis = millis();
+  if (currentMillis - previousMillis >= interval) {
+    previousMillis = currentMillis;
+ 
+  }
+}
 
