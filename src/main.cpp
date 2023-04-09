@@ -1,3 +1,10 @@
+/*
+  Titre : projet final avec OTA
+  Auteur : Ayyoub Outgouga
+  Date : 10/04/2023
+  Description: Examen (Projet Final) Des deux cours prog 1354 , 1355 3eme branch s'appele firmware2 avec un arrier plan en bleau ciel
+  Version : 0.0.3
+*/
 #include <Adafruit_Sensor.h>
 #include <Adafruit_BME280.h>
 #include <WiFi.h>
