@@ -282,8 +282,8 @@ server.on("/js/esp.js", HTTP_GET, [](AsyncWebServerRequest *request){
 }
 
 void loop() {
+  // branch teste   
   // Le serveur web asynchrone gère les requêtes sans blocage
-
   // Save data to data.json periodically
   unsigned long currentMillis = millis();
   if (currentMillis - previousMillis >= interval) {
